@@ -44,4 +44,4 @@ A simple weather search app made with Flutter.
 
 ## 🔖 LICENCE
 
-[Apache-2.0](https://github.com/JideGuru/FlutterEbookApp/blob/master/LICENSE)
+[MIT](https://github.com/aakashkondhalkar/flutter_projects/blob/main/climate/LICENSE)
