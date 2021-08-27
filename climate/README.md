@@ -1,18 +1,11 @@
 # Climate
 
 A simple weather search app made with Flutter.
+
 <br>
 
 ![gif](https://i.imgur.com/j1pbhkH.gif)
 
-<br>
-To download apk: 
-- Tap on the button below(it will take you to another page)
-- Scroll down the page to download `apk-release.apk`
-<br>
-<a href="https://play.google.com/store/apps/details?id=dev.jideguru.filex">
-    <img src="https://lh3.googleusercontent.com/qF9r3ZjtgG-qyHdmjecArtKiulz1gmwL_xl9R3_fzk6igSeoN0wYbJSKEX5d_fxJRwYZJpHbqcLB3i9atl-9dOfUl9an7U43TfZ9PtQ=s0" width="200"></img>
-</a>
 <br>
 
 ## 💻 Requirements
