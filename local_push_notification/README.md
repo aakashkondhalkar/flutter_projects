@@ -27,7 +27,7 @@ A simple push notification app made with Flutter.
 | Name                                                                                     | Usage              |
 | ---------------------------------------------------------------------------------------- | ------------------ |
 | [**getx**](https://pub.dev/packages/get)                                                 | State Management   |
-| [**flutter_local_notifications:**](https://pub.dev/packages/flutter_local_notifications) | Local Notification |
+| [**flutter_local_notifications**](https://pub.dev/packages/flutter_local_notifications) | Local Notification |
 
 ## 🤓 Author(s)
 
