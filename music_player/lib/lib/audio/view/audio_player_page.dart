@@ -26,7 +26,7 @@ class AudioPlayer extends StatelessWidget {
       selector: (state) => state.imagePath,
       builder: (context, image) {
         return Miniplayer(
-          minHeight: 120,
+          minHeight: 130,
           maxHeight: size.height,
           elevation: 10,
           backgroundColor: Colors.black.withOpacity(0.2),
@@ -67,8 +67,11 @@ class AudioPlayer extends StatelessWidget {
                                 padding: EdgeInsets.only(
                                     top: percentage < 1.0 ? 0 : kToolbarHeight),
                                 child: MediaPicture(
-                                    height: height * 0.4, isExpanded: true),
+                                    height: height * 0.4,
+                                    isExpandedPlayer: true),
                               ),
+                              MediaTitle(
+                                  color: controlColor, isExpandedPlayer: true),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
@@ -85,7 +88,8 @@ class AudioPlayer extends StatelessWidget {
                             children: [
                               MediaPicture(
                                 height: height,
-                                width: 100,
+                                width: 120,
+                                isExpandedPlayer: false,
                               ),
                               Expanded(
                                 child: Column(
@@ -94,12 +98,16 @@ class AudioPlayer extends StatelessWidget {
                                     Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
+                                      mainAxisSize: MainAxisSize.min,
                                       children: [
                                         SeekPreviousButton(color: controlColor),
                                         PlayPauseButton(color: controlColor),
                                         SeekNextButton(color: controlColor),
                                       ],
                                     ),
+                                    MediaTitle(
+                                        color: controlColor,
+                                        isExpandedPlayer: false),
                                     PlayerSlider(color: controlColor),
                                   ],
                                 ),

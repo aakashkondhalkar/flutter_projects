@@ -3,17 +3,18 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:music_player/lib/audio/audio.dart';
+import 'package:music_player/lib/utils/theme/app_colors.dart';
 
 class MediaPicture extends StatelessWidget {
   final double height;
   final double? width;
-  final bool isExpanded;
+  final bool isExpandedPlayer;
 
   const MediaPicture({
     super.key,
     required this.height,
     this.width,
-    this.isExpanded = false,
+    required this.isExpandedPlayer,
   });
 
   @override
@@ -25,7 +26,8 @@ class MediaPicture extends StatelessWidget {
           alignment: Alignment.center,
           height: height,
           width: width ?? height,
-          margin: EdgeInsets.only(bottom: !isExpanded ? 0 : 50),
+          // color: image == null ? AppColors.background : null,
+          padding: EdgeInsets.only(bottom: !isExpandedPlayer ? 0 : 50),
           child: (image != null && image.isNotEmpty)
               ? Image.memory(
                   Uint8List.fromList(image),
@@ -42,6 +44,7 @@ class MediaPicture extends StatelessWidget {
               : Icon(
                   Icons.music_note_rounded,
                   size: height * 0.6,
+                  color: AppColors.onBackground,
                 ),
         );
       },

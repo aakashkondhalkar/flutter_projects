@@ -9,7 +9,7 @@ class SeekNextButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      icon: Icon(Icons.skip_next, color: color),
+      icon: Icon(Icons.skip_next, color: color, size: 32),
       onPressed: () {
         context.read<AudioCubit>().playNext();
       },
@@ -24,7 +24,7 @@ class SeekPreviousButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      icon: Icon(Icons.skip_previous, color: color),
+      icon: Icon(Icons.skip_previous, color: color, size: 32),
       onPressed: () {
         context.read<AudioCubit>().playPrevious();
       },
